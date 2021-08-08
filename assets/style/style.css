@@ -232,6 +232,14 @@ footer h2 {
 
 }
 
+@media screen and (max-width: 768px) {
+    header nav ul {
+        float: none;
+        display: flex;
+    }
+    
+}
+
 /* adjust layout for Ipad size */
 
 @media screen and (max-width: 1318px) {    
