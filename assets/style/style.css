@@ -1,26 +1,27 @@
+/* applies styles to entire page */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* applies bckground color of the body */
 body {
     background-color: #c7c8ca;
 }
-
+/* styles header */
 header {
     padding: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: rgb(121, 128, 131);
     color: #ffffff;
 }
-
+/* styles h1 element of the header */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
-
+/* styles the navigation section of the header*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -29,15 +30,17 @@ header nav {
     font-size: 20px;
 }
 
+/* styles the navigation list of the header */
 header nav ul {
     list-style-type: none;
 }
 
+/* styles the list items in the navigation*/
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
+/* adds / styles image bar under header */
 .hero {
     height: 175px;
     width: 100%;
@@ -47,12 +50,16 @@ header nav ul li {
     background-position: center;
 }
 
+/* syles main section of HTML */
+
 main {
     flex: auto;
     width: 75%;
     display: inline-block;
     margin-left: 30px;
 } 
+
+/* syles h2 elemen in main section of HTML */ 
 
 main h2 {
     font-size: 36px;
@@ -62,26 +69,28 @@ main h2 {
     margin-left: 30px;
 }
 
+/* syles all the a elements */
 a {
     color: #ffffff;
     text-decoration: none;
     font-size: 21px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* styles the p elements */
 p {
     font-size: 16px;
 }
+
+/* CSS flex container styling */ 
 
 .flex-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    background-color: rgb(121, 128, 131);
-    margin: ;
- 
+    background-color: rgb(121, 128, 131); 
 } 
 
+/* syles the large content box in center */
 .boxBig {
     display:flex;
     flex-direction: row;
@@ -95,6 +104,7 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* styles the 4 smaller content boxes*/
 .boxSmall {
     display:flex;
     flex-direction: row;
@@ -107,7 +117,7 @@ p {
     color:midnightblue;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+/* styles label on each content box */
 .label {
     display: block;
     position: absolute;
@@ -117,19 +127,17 @@ p {
     width: 175px;
     
 }
+
+/* styles the two pictures in the aside*/
 .center {
-    display: block;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
     width: 100%;
 }
 
-.center h3 {
-    font-size: 21px;
-}
-
-
+/* styles the content aside*/
 aside {
     margin-right: 30px;
     margin-bottom: 40px;
@@ -143,33 +151,39 @@ aside {
     color: #ffffff;
 }
 
+/* styles the h2 element in the aside*/
+
 aside h2 {
     text-align: center;
     font-size: 36px;
 }
+
+/* styles the image of linkedin the aside*/
 
 #linkedin img {
     max-width: 40px;
     max-height: 40px;
 }
 
+/* styles the footer*/
+
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-}
-
-footer {
-    width: 75%;
+    width: 100%;
     display: inline-block;
     margin-left: 20px;
 }
+
+/* styles the h2 element in the footer*/
 
 footer h2 {
     font-size: 20px;
 }
 
+/* media queries */
 
 @media screen and (max-width: 576px) {    
     aside {
@@ -178,17 +192,47 @@ footer h2 {
     }
 }
 
+/* adjust layout for Ipad size */
+
 @media screen and (max-width: 768px) {    
+   
+    main {
+        flex: auto;
+        width: 100%;
+        display: inline-block;
+        margin-left: 0px;
+    } 
+
+    aside {
+
+        width: 100%;
+    }
+
+    .flex-container {
+        width:100%;
+    }
+
+    .boxBig {
+        width: 100%;
+    }
+
+    .boxSmall {
+        width: 100%;
+    }
+
+    header {
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 1400px) {    
     aside {
         float:none;
         width: 100%;
     }
-}
-
-@media screen and (max-width: 992px) {    
-    aside, main {
-        float:;
-        width: 100%;
+    main {
+        width:100%;
     }
 }
 
