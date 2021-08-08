@@ -1,14 +1,9 @@
-/* applies styles to entire page */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
 /* applies bckground color of the body */
 body {
     background-color: #c7c8ca;
 }
+
 /* styles header */
 header {
     padding: 30px;
@@ -16,18 +11,20 @@ header {
     background-color: rgb(121, 128, 131);
     color: #ffffff;
 }
+
 /* styles h1 element of the header */
 header h1 {
     display: inline-block;
     font-size: 48px;
 }
+
 /* styles the navigation section of the header*/
 header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 /* styles the navigation list of the header */
@@ -39,28 +36,30 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 25px;
+    font-size: 24px;
 }
+
 /* adds / styles image bar under header */
 .hero {
     height: 175px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     background-image: url("3272183.jpg");;
     background-size: cover;
     background-position: center;
 }
 
 /* syles main section of HTML */
-
 main {
     flex: auto;
-    width: 75%;
+    flex-wrap: wrap;
+    width: 73%;
     display: inline-block;
     margin-left: 30px;
 } 
 
 /* syles h2 elemen in main section of HTML */ 
-
 main h2 {
     font-size: 36px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -73,16 +72,15 @@ main h2 {
 a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 21px;
+    font-size: 18px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 /* styles the p elements */
 p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 /* CSS flex container styling */ 
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +118,7 @@ p {
 /* styles label on each content box */
 .label {
     display: block;
-    position: absolute;
+    position: static;
     margin: 1%;
     background-color:#c7c8ca;
     height: 150px;
@@ -185,16 +183,58 @@ footer h2 {
 
 /* media queries */
 
-@media screen and (max-width: 576px) {    
+@media screen and (max-width: 375px) {
+    
+    header nav ul {
+        padding-top: 15px;
+        float: none;
+        display: flex;
+    }
+
+    .boxSmall {
+        width:100%;
+       
+    }
+
+    .label {
+        width: 100px;
+        height: 75px;
+    }
+
+    main {
+        margin: 0 3px;
+    }
+
+}
+
+@media screen and (max-width: 414px) {    
+    
+    header nav ul {
+        padding-top: 15px;
+        float: none;
+        display: flex;
+    }
+    
     aside {
         float:none;
         width: 100%;
     }
+
+    header nav {
+        padding-top: 15px;
+        float: none;
+    }
+
+    .label {
+        width: 125px;
+        height: 100px;
+    }
+
 }
 
 /* adjust layout for Ipad size */
 
-@media screen and (max-width: 768px) {    
+@media screen and (max-width: 1318px) {    
    
     main {
         flex: auto;
@@ -204,7 +244,7 @@ footer h2 {
     } 
 
     aside {
-
+        float:none;
         width: 100%;
     }
 
@@ -212,23 +252,24 @@ footer h2 {
         text-align: center;
         padding: 50px;
     }
+
+    
 }
 
-@media screen and (max-width: 1200px) {    
-   
-    main {
-        flex: auto;
-        width: 100%;
-        display: inline-block;
-        margin-left: 0px;
-    } 
 
-    aside {
-        float:none;
-        width: 100%;
+
+@media screen and (max-width: 1366px) {    
+   
+
+    header h1 {
+        margin-right: 35px;
     }
 
 
-   
 }
 
+@media screen and (max-width: 1536px) {
+    aside {
+        margin-right: 40px;
+    }
+}
