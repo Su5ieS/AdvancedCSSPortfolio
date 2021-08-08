@@ -208,31 +208,27 @@ footer h2 {
         width: 100%;
     }
 
-    .flex-container {
-        width:100%;
-    }
-
-    .boxBig {
-        width: 100%;
-    }
-
-    .boxSmall {
-        width: 100%;
-    }
-
     header {
         text-align: center;
         padding: 50px;
     }
 }
 
-@media screen and (max-width: 1400px) {    
+@media screen and (max-width: 1200px) {    
+   
+    main {
+        flex: auto;
+        width: 100%;
+        display: inline-block;
+        margin-left: 0px;
+    } 
+
     aside {
         float:none;
         width: 100%;
     }
-    main {
-        width:100%;
-    }
+
+
+   
 }
 
