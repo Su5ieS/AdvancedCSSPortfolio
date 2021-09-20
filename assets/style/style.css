@@ -30,9 +30,13 @@ header h1 {
     background-position: center;
 }
 
-ul li {
+ol li {
     margin-top: 0;
     font-size: 1rem;
+}
+
+ol {
+    list-style-type:circle;
 }
 
 /* syles h2 elemen in main section of HTML */ 
@@ -43,50 +47,32 @@ main h2 {
     margin-left: 30px;
 }
 
+.card-body h5, h6 {
+    text-align: center;
+}
+
+.card-body p {
+    margin-left: 25%;
+}
+
+.card-body a {
+    margin-left: 75%;
+}
+.card-body li {
+    margin-left: 35%;
+
+}
 /* styles the p elements */
 p {
     font-size: 18px;
 }
 
-
-/* syles the large content box in center */
-.boxBig {
-    display:flex;
-    flex-direction: row; 
-    flex: 0 0 95%;
-    margin: 2.5%;
-    background-image: url("https://user-images.githubusercontent.com/84972783/133344219-e389307c-0712-41dd-aacd-ec3694a833fd.png");
-    height: 500px;
-    background-size: 100%;
-    background-position: fill;
-    color:midnightblue;
+.row {
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    justify-content: center;
 }
 
-/* styles the 4 smaller content boxes*/
-.boxSmall {
-    display:flex;
-    flex-direction: row;
-    flex: 0 0 45%;
-    margin: 2.5%;
-    background-image: url("25101.jpg");
-    height: 260px;
-    background-size: 120%;
-    background-position: fill;
-    color:midnightblue;
-
-}
-/* styles label on each content box */
-.label {
-    display: block;
-    position: static;
-    margin: 1%;
-    padding: 1rem;
-    background-color:white;
-    font-size: 2rem;
-    height: fit-content;
-    width: fit-content;
-
-}
 
 /* styles the two pictures in the aside*/
 .center {
