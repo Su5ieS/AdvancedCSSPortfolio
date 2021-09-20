@@ -4,6 +4,12 @@
 #myWork {
     background-color:  rgb(121, 128, 131);
     padding-top: 1rem;
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.col-4 {
+    margin-left: 0;
 }
 
 /* styles header */
@@ -30,15 +36,6 @@ header h1 {
     background-position: center;
 }
 
-ol li {
-    margin-top: 0;
-    font-size: 1rem;
-}
-
-ol {
-    list-style-type:circle;
-}
-
 /* syles h2 elemen in main section of HTML */ 
 main h2 {
     font-size: 36px;
@@ -47,21 +44,11 @@ main h2 {
     margin-left: 30px;
 }
 
-.card-body h5, h6 {
-    text-align: center;
+.btn {
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
-.card-body p {
-    margin-left: 25%;
-}
-
-.card-body a {
-    margin-left: 75%;
-}
-.card-body li {
-    margin-left: 35%;
-
-}
 /* styles the p elements */
 p {
     font-size: 18px;
@@ -71,22 +58,29 @@ p {
     padding-left: .25rem;
     padding-bottom: 1rem;
     justify-content: center;
+    margin-right: 0;
 }
 
 
-/* styles the two pictures in the aside*/
+/* styles the picture in the aside*/
 .center {
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    width: 100%;
+    width: 95%;
+}
+
+#aboutMe {
+    background-color: rgb(121, 128, 131);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 95%;
 }
 
 #contactMe {
     background-color: rgb(121, 128, 131);
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 95%;
+    margin-top: 0;
 }
 
 #contactMe h2{
@@ -119,4 +113,3 @@ footer {
 footer h2 {
     font-size: 20px;
 }
-
